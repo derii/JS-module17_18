@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Module 17-18. Java Script. Bogdan Derii.</title>
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!--<script src="js/jQuery.carousel.js"></script>
+	<script src="js/tmpl.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+	<!--<script src="js/script.js"></script>-->
+	<script src="js/assets/script.main.js"></script>
+	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	  
+</head> 
+<body>
+
+	<div class="wrapper block-title">
+		<h2>Carousel jQuery plugin</h2>
+	</div>
+
+	<!-- =================================== User Profile ================================================== -->
+	<script type="text/html" class="user-profile">
+		<div class="wrapper block-title">
+			<h2><%= title %></h2>
+		</div>
+		<div class="wrapper profile">
+			<div class="me">
+				<h3><%= fio %></h3>
+				<img src="<%= photo %>" alt="my photo">
+				<p class="bold"><%= prevPosition %></p>
+				<hr>
+			</div>
+			<div class="why">
+				<p class="bold"><%= goal %></p>
+				<ul>
+					<li><%= rationale1 %></li>
+					<li><%= rationale2 %></li>
+					<li><%= rationale3 %></li>
+				</ul>
+				<hr>
+			</div>
+			<div class="contacts">
+				<p class="bold">Phone:</p>
+				<p><%= tel %></p>
+				<p class="bold">My Facebook profile:</p>
+				<p><a href="<%= fb %>" target="_blank">facebook.com/bogdan.derii</a></p>
+				<hr>
+			</div>
+			<div class="feedback">
+				<p class="bold">My feedback:</p>
+				<p><%= feadback %></p>
+			</div>
+		</div>
+	</script>
+	<!-- =================================== END User Profile ================================================== -->
+	
+	<!-- =================================== Carousel ================================================== -->
+	<div class="wrapper">
+		<div class="carousel clearfix">
+			<div class="carousel__arrow carousel__arrow_left"><span>Left</span></div>
+			<div class="carousel__hider clearfix">
+				<ul class="carousel__list clearfix">
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture1">
+						<p class="item__text">Photo1</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture2">
+						<p class="item__text">Photo2</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture3">
+						<p class="item__text">Photo1</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture4">
+						<p class="item__text">Photo2</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture5">
+						<p class="item__text">Photo1</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture6">
+						<p class="item__text">Photo2</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture7">
+						<p class="item__text">Photo1</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture8">
+						<p class="item__text">Photo2</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture9">
+						<p class="item__text">Photo1</p>
+					</li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture10">
+						<p class="item__text">Photo2</p
+					></li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img1.jpg" alt="picture11">
+						<p class="item__text">Photo1</p
+					></li>
+					<li class="carousel__item">
+						<img class="item__image" src="img/img2.jpg" alt="picture12">
+						<p class="item__text">Photo2</p
+					></li>
+				</ul>
+			</div>
+			<div class="carousel__arrow carousel__arrow_right"><span>Right</span></div>
+		</div>
+	</div>
+	<!-- =================================== END Carousel ================================================== -->
+</body>
+</html>
